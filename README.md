@@ -6,9 +6,9 @@
 
 ### Links and Resources
 
-- [ci/cd](http://xyz.com) (GitHub Actions)
-- [back-end server url](http://xyz.com) (when applicable)
-- [front-end application](http://xyz.com) (when applicable)
+- [GitHub Actions](https://github.com/simon-panek/basic-api-server/actions) 
+
+- [Heroku Deployment](https://simonpanek-basic-api-server.herokuapp.com/)
 
 ### Setup
 
