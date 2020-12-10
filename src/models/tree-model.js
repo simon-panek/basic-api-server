@@ -33,16 +33,8 @@ class TreeModel {
   delete (id) {
     if(!id) {return null}
     else {
-      // const idx = this.db.findIndex(object => {
-      //   object.id === id;
-      // })
-      let tempDB =[];
-      this.db.forEach(record => {
-        if(record.id !== id){
-          tempDB.push(record);
-        }
-      })
-      this.db = tempDB;
+      const i = this.db.findIndex(object => object.id === parseInt(id));
+      this.db.splice(i,1);
       return this.db;
     }
   }

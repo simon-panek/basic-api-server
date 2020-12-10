@@ -37,7 +37,7 @@ function updateTree (req, res) {
   const id = req.params.id;
   const obj = req.body;
   const updatedTree = tree.update(id, obj);
-  res.status(200).send('It was updated');
+  res.status(200).send('It was updated ');
 }
 
 function deleteTree (req, res) {

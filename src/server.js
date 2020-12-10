@@ -9,13 +9,13 @@ const logger = require('./middleware/logger.js');
 const notFoundHandler = require ('./error-handlers/404.js');
 const serverError = require ('./error-handlers/500.js');
 const treeRoutes = require ('./routes/tree-routes.js'); 
-//const foodRoutes = require ('./routes/food-routes.js');
+const foodRoutes = require ('./routes/food-routes.js');
 
 //custom middleware
 app.use(express.json());
 app.use(logger);
 app.use(treeRoutes);
-//app.use(foodRoutes);
+app.use(foodRoutes);
 
 app.get('/test', (req, res) => {
   res.status(200).send('Surprisingly, this thing works!');
