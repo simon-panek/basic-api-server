@@ -28,6 +28,19 @@ class TreeModel {
       this.db[i].name = obj.name;
       return this.db[i];
     }
+    //code review
+    // this.db = this.db.map (record => {
+    //   if(record.id !== id) return;
+    //   obj.keys.forEach( key => {
+    //     record[key] = obj[key];
+    //   })
+    //   return record;
+    // })
+    // return this.db.find(record => record.id === it);
+    // OR DO THIS
+    // dbObj = this.db.find(record => record.id === parseInt(id));
+    // dbObj = {...dbObj, ...obj};
+    // return dbObj;
   }
 
   delete (id) {
