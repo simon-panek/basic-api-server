@@ -3,6 +3,7 @@
 const express = require('express');
 const Tree = require ('../models/tree-model.js');
 const tree = new Tree();
+const validator = require('../middleware/validator.js');
 
 const router = express.Router();
 
@@ -10,8 +11,8 @@ const router = express.Router();
 
 router.get('/tree', getTree);
 router.get('/tree/:id', getOneTree);
-router.post('/tree', createTree);
-router.put('/tree/:id', updateTree);
+router.post('/tree', validator, createTree);
+router.put('/tree/:id', validator, updateTree);
 router.delete('/tree/:id', deleteTree);
 
 //Route Handlers
