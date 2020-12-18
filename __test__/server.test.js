@@ -5,7 +5,7 @@ const supertest = require('supertest');
 const mockRequest = supertest(server);
 
 describe('web server', () => {
-  it ('should respond with a 200', () => {
+  it ('7. should respond with a 200', () => {
     return mockRequest
       .get('/test')
       .then (results => {
@@ -14,7 +14,7 @@ describe('web server', () => {
   })
 })
 
-describe('web server', () => {
+describe('8. web server', () => {
   it ('should respond with a 404', () => {
     return mockRequest
       .get('/broken')
@@ -24,7 +24,7 @@ describe('web server', () => {
   })
 })
 
-describe('web server', () => {
+describe('9. web server', () => {
   it ('should respond with a 404', () => {
     return mockRequest
       .post('/test')
