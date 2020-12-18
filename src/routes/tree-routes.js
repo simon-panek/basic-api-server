@@ -31,7 +31,7 @@ function getOneTree (req, res) {
 function createTree (req, res) {
   const obj= req.body;
   const newTree = tree.create(obj);
-  res.status(200).json(allTree);
+  res.status(200).json(newTree);
 }
 
 function updateTree (req, res) {

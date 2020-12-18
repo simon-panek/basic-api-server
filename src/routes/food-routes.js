@@ -30,8 +30,8 @@ function getOneFood (req, res) {
 
 function createFood (req, res) {
   const obj= req.body;
-  const newTree = food.create(obj);
-  res.status(200).json(allFood);
+  const newFood = food.create(obj);
+  res.status(200).json(newFood);
 }
 
 function updateFood (req, res) {
